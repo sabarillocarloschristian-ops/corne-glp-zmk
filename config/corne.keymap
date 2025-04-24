@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt { tapping-term-ms = <100>; };
 
@@ -58,10 +59,10 @@
 
         main {
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E              &kp R            &kp T        &kp Y                 &kp U               &kp I                            &kp O    &kp P          &kp BACKSLASH
-&kp LCTRL   &kp A  &kp S  &kp D              &kp F            &kp G        &kp H                 &kp J               &kp K                            &kp L    &kp SEMICOLON  &kp SQT
-&caps_lock  &kp Z  &kp X  &kp C              &kp V            &kp B        &kp N                 &kp M               &kp COMMA                        &kp DOT  &kp FSLH       &mo 3
-                          &kp LS(LA(LCTRL))  &meta_backspace  &lt 1 ESC    &mt LEFT_SHIFT ENTER  &space_nav 2 SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
+&kp TAB         &kp Q  &kp W  &kp E                        &kp R            &kp T        &kp Y                 &kp U               &kp I                            &kp O    &kp P          &kp BACKSLASH
+&kp LCTRL       &kp A  &kp S  &kp D                        &kp F            &kp G        &kp H                 &kp J               &kp K                            &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                        &kp V            &kp B        &kp N                 &kp M               &kp COMMA                        &kp DOT  &kp FSLH       &mo 3
+                              &mt LS(LA(LCTRL)) LG(LC(M))  &meta_backspace  &lt 1 ESC    &mt LEFT_SHIFT ENTER  &space_nav 2 SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
             >;
         };
 
@@ -76,10 +77,10 @@
 
         nav {
             bindings = <
-&trans  &mkp RCLK  &trans     &trans      &trans        &mkp MCLK    &kp SYSREQ  &kp HOME        &trans        &kp END             &trans  &trans
-&trans  &trans     &trans     &trans      &trans        &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
-&trans  &trans     &kp LCTRL  &kp LSHIFT  &kp LEFT_ALT  &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
-                              &trans      &trans        &trans       &trans      &trans          &trans
+&trans  &mkp RCLK  &trans          &mmv MOVE_UP    &trans           &mkp MCLK    &kp SYSREQ  &kp HOME        &trans        &kp END             &trans  &trans
+&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW     &trans  &trans
+&trans  &trans     &kp LCTRL       &kp LSHIFT      &kp LEFT_ALT     &trans       &kp DEL     &kp PAGE_DOWN   &kp PG_UP     &kp K_CONTEXT_MENU  &trans  &trans
+                                   &trans          &trans           &trans       &trans      &trans          &trans
             >;
         };
 
