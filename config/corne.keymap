@@ -59,10 +59,10 @@
 
         main {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E                        &kp R            &kp T        &kp Y                 &kp U               &kp I                            &kp O    &kp P          &kp BACKSLASH
-&kp LCTRL       &kp A  &kp S  &kp D                        &kp F            &kp G        &kp H                 &kp J               &kp K                            &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                        &kp V            &kp B        &kp N                 &kp M               &kp COMMA                        &kp DOT  &kp FSLH       &mo 3
-                              &mt LS(LA(LCTRL)) LG(LC(M))  &meta_backspace  &lt 1 ESC    &mt LEFT_SHIFT ENTER  &space_nav 2 SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
+&kp TAB         &kp Q  &kp W  &kp E                        &kp R            &kp T                 &kp Y        &kp U               &kp I                            &kp O    &kp P          &kp BACKSLASH
+&kp LCTRL       &kp A  &kp S  &kp D                        &kp F            &kp G                 &kp H        &kp J               &kp K                            &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                        &kp V            &kp B                 &kp N        &kp M               &kp COMMA                        &kp DOT  &kp FSLH       &mo 3
+                              &mt LS(LA(LCTRL)) LG(LC(M))  &meta_backspace  &mt LEFT_SHIFT ESC    &lt 1 ENTER  &space_nav 2 SPACE  &mt LEFT_ALT LS(LC(LA(INSERT)))
             >;
         };
 
