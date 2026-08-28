@@ -96,7 +96,7 @@
         game {
             bindings = <
 &kp TAB       &kp ESCAPE        &kp Q     &kp W    &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_2  &kp LSHFT         &kp A     &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_2  &kp LSHFT         &kp A     &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &kp X
 &kp NUMBER_3  &kp LEFT_CONTROL  &kp LEFT  &kp C    &kp RIGHT  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans  &trans
                                           &lt 5 X  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
             >;
@@ -104,7 +104,7 @@
 
         game_arrows {
             bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &kp X            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans  &trans
