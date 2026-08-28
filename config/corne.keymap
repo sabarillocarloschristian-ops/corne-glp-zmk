@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&lt 1 BACKSPACE>, <&kp BACKSPACE>;
 
             tapping-term-ms = <100>;
         };
@@ -62,43 +62,43 @@
 &kp TAB           &kp Q  &kp W  &kp E             &kp R                 &kp T                 &kp Y         &kp U           &kp I            &kp O    &kp P          &kp BACKSLASH
 &kp LEFT_GUI      &kp A  &kp S  &kp D             &kp F                 &kp G                 &kp H         &kp J           &kp K            &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C             &kp V                 &kp B                 &kp N         &kp M           &kp COMMA        &kp DOT  &kp FSLH       &tog 4
-                                &layer_backspace  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT ENTER    &lt 1 ESCAPE  &lt 3 C_VOL_DN  &kp C_VOLUME_UP
+                                &layer_backspace  &mt LEFT_SHIFT SPACE  &mt LEFT_ALT ENTER    &lt 2 ESCAPE  &lt 3 C_VOL_DN  &kp C_VOLUME_UP
             >;
         };
 
         numsym {
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8  &kp N9  &kp N0       &trans  &trans          &trans     &trans        &trans        &trans
-&kp PERIOD        &kp SEMI           &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans
-&kp ENTER         &kp GRAVE          &kp N1  &kp N2  &kp N3  &kp BSLH     &trans  &trans          &trans     &trans        &trans        &trans
-                                             &trans  &trans  &trans       &trans  &trans          &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7  &kp N8  &kp N9  &kp N0                  &trans  &trans          &trans     &trans        &trans        &trans
+&kp PERIOD        &kp SEMI           &kp N4  &kp N5  &kp N6  &kp MINUS               &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &trans
+&kp ENTER         &kp GRAVE          &kp N1  &kp N2  &kp N3  &kp EQUAL               &trans  &trans          &trans     &trans        &trans        &trans
+                                             &trans  &trans  &kp NON_US_BACKSLASH    &trans  &trans          &trans
             >;
         };
 
         Fun {
             bindings = <
-&kp TAB  &kp F12  &kp F7  &kp F8  &kp F9     &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans    &mo 5
-&trans   &kp F11  &kp F4  &kp F5  &kp F6     &kp LG(LS(C))      &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans   &kp F10  &kp F1  &kp F2  &kp F3     &trans             &trans  &trans     &trans     &trans    &trans    &trans
-                          &trans  &kp SPACE  &trans             &trans  &trans     &trans
+&trans  &trans    &trans    &trans     &trans     &trans           &trans   &kp F7  &kp F8  &kp F9  &kp F12  &mo 5
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LG(LS(C))    &trans   &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans    &trans    &trans     &trans     &trans           &kp TAB  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                            &trans     &kp SPACE  &trans           &trans   &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &mkp RCLK  &trans          &mmv MOVE_UP    &trans           &mkp MCLK    &kp INSERT  &kp UP_ARROW    &kp DELETE       &kp PG_UP      &trans  &trans
-&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &kp LEFT    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans  &trans
-&trans  &trans     &kp LCTRL       &kp LSHIFT      &kp LEFT_ALT     &trans       &kp HOME    &kp PAGE_DOWN   &kp END          &trans         &trans  &trans
-                                   &trans          &trans           &trans       &trans      &trans          &trans
+&trans  &mkp RCLK  &trans          &mmv MOVE_UP    &trans           &mkp MCLK    &trans  &kp INS   &kp UP_ARROW  &kp DELETE       &kp PG_UP  &trans
+&trans  &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PG_DN  &trans
+&trans  &trans     &kp LCTRL       &kp LSHIFT      &kp LEFT_ALT     &trans       &trans  &kp HOME  &kp PG_DN     &kp END          &trans     &trans
+                                   &trans          &trans           &trans       &trans  &trans    &trans
             >;
         };
 
         game {
             bindings = <
-&kp TAB       &kp ESCAPE  &kp Q     &kp W   &kp E      &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_4  &kp LSHFT   &kp A     &kp S   &kp D      &kp NUMBER_2    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans      &kp LEFT  &trans  &kp RIGHT  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
-                                    &kp C   &kp SPACE  &kp LCTRL       &trans  &trans  &trans
+&kp TAB       &kp ESCAPE        &kp Q     &kp W   &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_3  &kp LSHFT         &kp A     &kp S   &kp D      &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_4  &kp LEFT_CONTROL  &kp LEFT  &trans  &kp RIGHT  &kp NUMBER_2    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &kp C   &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
             >;
         };
 
