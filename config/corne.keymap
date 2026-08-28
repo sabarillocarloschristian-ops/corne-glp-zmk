@@ -97,8 +97,8 @@
             bindings = <
 &kp TAB       &kp ESCAPE        &kp Q     &kp W    &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
 &kp NUMBER_2  &kp LSHFT         &kp A     &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
-&kp NUMBER_3  &kp LEFT_CONTROL  &kp LEFT  &kp X    &kp RIGHT  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &lt 5 C  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
+&kp NUMBER_3  &kp LEFT_CONTROL  &kp LEFT  &kp C    &kp RIGHT  &kp NUMBER_1    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &lt 5 X  &kp SPACE  &kp LEFT_ALT    &trans  &trans  &trans
             >;
         };
 
